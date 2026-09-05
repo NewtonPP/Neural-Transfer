@@ -13,9 +13,9 @@ from utils import *
 def parse_arguments():
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('--content_dir', type=str, default='/Users/prashidha/Desktop/Codes/NeuralTransfer/content_data',
+    parser.add_argument('--content_dir', type=str, default='path_to_content_data',
                         help='Location of content dataset')
-    parser.add_argument('--style_dir', type=str, default='/Users/prashidha/Desktop/Codes/NeuralTransfer/style_data',
+    parser.add_argument('--style_dir', type=str, default='path_to_style_data',
                         help='Location of style dataset')
     parser.add_argument('--vgg', type=str, default='vgg_normalised.pth',
                         help='Location of pre-trained VGG')

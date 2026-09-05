@@ -35,7 +35,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 encoder = Encoder('vgg_normalised.pth').to(device)
 decoder = Decoder().to(device)
-decoder.load_state_dict(torch.load('/Users/prashidha/Desktop/Codes/NeuralTransfer/experiment/experiment1/best_decoder.pth'))
+decoder.load_state_dict(torch.load('path_of_decoder_weights'))
 
 encoder.eval()
 decoder.eval()

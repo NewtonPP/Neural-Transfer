@@ -5,3 +5,5 @@ style_data
 style_data
 static
 experimentc
+__pycache__
+vgg_normalised.pth
